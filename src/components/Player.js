@@ -5,7 +5,7 @@ import jam from "../assets/samirjam.wav"; // importing the music
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // icons for play and pause
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // icons for next and previous track
 import { IconContext } from "react-icons"; // for customazing the icons
-
+import cover from '../assets/cover.png'
 
 function Player() {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -68,11 +68,11 @@ function Player() {
       <h2>Playing Now</h2>
       <img
         className="musicCover"
-        src="https://picsum.photos/200/200"
+        src={cover}
       />
       <div>
-        <h3 className="title">Tuesday Jam</h3>
-        <p className="subTitle">Samir wa amin </p>
+        <h3 className="title">Fragments of a mind</h3>
+        <p className="subTitle">Samin (Samir&Amin) </p>
       </div>
 
       {//track progress 
